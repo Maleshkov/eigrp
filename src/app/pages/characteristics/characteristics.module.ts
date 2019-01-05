@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-import { StarterComponent } from './starter.component';
+import { CharacteristicsComponent } from './characteristics.component';
 
 
 const routes: Routes = [{
 	path: '',
 	data: {
-        title: 'Представяне на протокола EIGRP',
+        title: 'Характеристики на протокола EIGRP',
 		urls: [{title: 'Dashboard',url: '/'},{title: 'Начало'}]
     },
-	component: StarterComponent
+	component: CharacteristicsComponent
 }];
 
 @NgModule({
@@ -21,6 +21,6 @@ const routes: Routes = [{
     	CommonModule, 
     	RouterModule.forChild(routes)
     ],
-	declarations: [StarterComponent]
+	declarations: [CharacteristicsComponent]
 })
-export class StarterModule { }
+export class CharacteristicsModule { }

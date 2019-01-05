@@ -7,6 +7,7 @@ const routes: Routes = [
         path: '', component: PageComponent,
         children: [
             { path: 'starter', loadChildren: './starter/starter.module#StarterModule' },
+            { path: 'characteristics', loadChildren: './characteristics/characteristics.module#CharacteristicsModule' },
             { path: 'accordion', loadChildren: './component/accordion/accordion.module#AccordionModule' },
             { path: 'alert', loadChildren: './component/alert/alert.module#NgAlertModule' },
             { path: 'carousel', loadChildren: './component/carousel/carousel.module#ButtonsModule' },

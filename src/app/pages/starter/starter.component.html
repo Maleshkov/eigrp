@@ -1,8 +1,10 @@
-<div class="row">
+<div class="row" n>
     <div class="col-12">
         <div class="card">
-            <div class="card-body" style="text-align: justify;">
-                {{subtitle}}
+            <div class="card-body">
+                <div *ngFor="let sub of subtitle; let i = index"  style="text-align: justify; text-indent: 40px;">
+                    <p>{{sub}}</p>
+                </div>
             </div>
         </div>
     </div>

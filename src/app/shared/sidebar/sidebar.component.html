@@ -42,7 +42,11 @@
         <li class="nav-small-cap">PERSONAL</li>
         <li [class.active]="showMenu === 'start'">
           <a routerLink="/starter" (click)="addExpandClass('start')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span
-              class="hide-menu">Starter Page</span></a>
+              class="hide-menu">Начало</span></a>
+        </li>
+        <li [class.active]="showMenu === 'characteristics'">
+          <a routerLink="/characteristics" (click)="addExpandClass('characteristics')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span
+              class="hide-menu">Характеристики</span></a>
         </li>
         <li class="nav-small-cap">UI COMPONENTS</li>
         <li>
